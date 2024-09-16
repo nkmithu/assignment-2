@@ -1,0 +1,30 @@
+Here are more concise answers:
+
+---
+
+Ans 1:  
+In MongoDB, using a **model** with a **schema** defines the structure of a collection, ensuring consistency in the stored data. An **interface** in TypeScript ensures the correct data types are used in the code. Together, they help enforce a predictable format for documents in a collection.
+
+---
+
+Ans 2:
+Field filtering in MongoDB allows us to control which fields are returned in queries. We can include or exclude fields using projections, like { fieldName: 1 } to include or { fieldName: 0 } to exclude specific fields.
+
+---
+
+Ans 3: 
+Instance methods are custom functions defined on a model that can be called on individual documents. For example:
+
+
+
+Ans 4:
+Comparison operators like $ne, $gt, $lt, etc., are used to compare values in queries. Examples:
+- { age: { $gt: 18 } } - matches documents with age greater than 18.
+- { price: { $lte: 100 } } - matches documents with price less than or equal to 100.
+
+
+
+Ans 5:
+The $in operator matches any values in a specified array, while $nin excludes them. Example:
+- { category: { $in: ['electronics', 'furniture'] } } matches documents with category in the array.
+- { status: { $nin: ['archived', 'deleted'] } } excludes documents with those statuses.
